@@ -1,10 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travellian</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-
+<main>
+    <section class="welcome_block">
+        <div class="container">
+            <header class="header">
+                <img src="" alt="Travellian">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </nav>
+                <div class="auth">
+                    <a href="#">Login</a>
+                    <a href="#" class="btn active">Sing up</a>
+                </div>
+            </header>
+            <div class="content">
+                <div class="titles">
+                    <h1 class="b_title">Start your unforgettable journey with us.</h1>
+                    <p class="subtitle">The best travel for your journey begins now</p>
+                </div>
+                <form class="form">
+                    <label>
+                        <span class="placeholder">Destination</span>
+                        <input type="text" value="Dubai" class="form_input">
+                    </label>
+                    <label>
+                        <span class="placeholder">Person</span>
+                        <input type="number" min="1" step="1" value="2" class="form_input">
+                    </label>
+                    <label>
+                        <span class="placeholder">Check in</span>
+                        <input type="date" value="Sun, 17th Sep 2020" class="form_input">
+                    </label>
+                    <label>
+                        <span class="placeholder">Check out</span>
+                        <input type="date" value="Tue, 17th Oct 2020" class="form_input">
+                    </label>
+                    <button type="submit" class="btn active">
+                        <span>Book Now</span>
+                        <span>→</span>
+                    </button>
+                </form>
+                <div class="pagination">
+                    <div class="circles">
+                        <i class="circle active"></i>
+                        <i class="circle"></i>
+                        <i class="circle"></i>
+                        <i class="circle"></i>
+                        <i class="circle"></i>
+                    </div>
+                    <div class="arrows">
+                        <span class="arrow">⋀</span>
+                        <span class="arrow active">⋁</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 </body>
 </html>

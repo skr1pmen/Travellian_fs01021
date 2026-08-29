@@ -1,0 +1,19 @@
+:root {
+    --accent-color: #ff7757;
+    --white: #fff;
+    --text-color: #172432;
+    --secondary-color: #767E86;
+    --black: #000;
+    --card-bg: #FFF8F1;
+    --star-color: #FFC107;
+    --btn-color: #FF7654;
+    --comment-card-bg: #F5F6F7;
+
+    --card-border-radius: 26px;
+    --btn-br: 12px;
+
+    --w-title: 84px;
+    --title: 64px;
+    --subtitle: 24px;
+    --text: 18px;
+}

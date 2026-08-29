@@ -1,0 +1,195 @@
+@import "./var.css";
+@import "./font.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1556px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 20px 28px;
+    background: var(--text-color);
+    border-radius: var(--btn-br);
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+
+    &.active {
+        background: var(--accent-color);
+    }
+}
+
+.welcome_block {
+    background: gray;
+    height: 100vh;
+}
+.header {
+    height: 128px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    width: 234px;
+}
+
+.header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+.header a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+    transition: all .3s linear;
+    border-bottom: 3px solid transparent;
+}
+
+.header nav a:hover {
+    border-bottom: 3px solid var(--accent-color);
+    font-weight: 500;
+}
+.auth {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+.content {
+
+}
+
+.b_title {
+    margin-bottom: 16px;
+    font-family: Playfair Display, sans-serif;
+    font-size: var(--w-title);
+    color: var(--white);
+    text-wrap: balance;
+    margin-top: 142px;
+    max-width: 1000px;
+}
+.container .subtitle {
+    font-family: Rubik, sans-serif;
+    font-size: var(--subtitle);
+    color: var(--white);
+}
+
+.form {
+    display: inline-flex;
+    gap: 40px;
+    background: var(--white);
+    padding: 74px 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /*overflow: hidden;*/
+    position: relative;
+    margin-top: 170px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 3000px;
+        background: var(--white);
+        top: 0;
+        left: -3000px;
+    }
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form label span {
+    font-family: Rubik, sans-serif;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.form_input {
+    border: none;
+    border-bottom: 1px solid var(--black);
+    font-family: Playfair Display, sans-serif;
+    font-size: 20px;
+    color: var(--text-color);
+    padding-bottom: 10px;
+    outline: none;
+}
+.form .btn {
+    margin: -74px 0;
+    border-radius: 0 20px 20px 0;
+    background: var(--accent-color);
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    transition: background-color .3s linear;
+    margin-left: 60px;
+}
+
+.form .btn span:nth-child(1) {
+    font-family: Playfair Display, sans-serif;
+    font-size: 36px;
+    text-wrap: balance;
+    width: 97px;
+}
+.form .btn span:nth-child(2) {
+    font-size: 2.5rem;
+}
+
+.form .btn:hover {
+    background: #cc5c45;
+    cursor: pointer;
+}
+
+.pagination {
+    position: absolute;
+    top: 50%;
+    right: 80px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.circles {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--white);
+
+    &.active {
+        background: var(--accent-color);
+    }
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.arrow {
+    color: var(--white);
+
+    &.active {
+        color: var(--accent-color);
+    }
+}
