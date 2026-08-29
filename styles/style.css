@@ -26,8 +26,12 @@
 }
 
 .welcome_block {
-    background: gray;
     height: 100vh;
+    background:
+            linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
+            url('../assets/images/hero_section.png');
+    background-size: cover;
+    background-position: 0 1240px;
 }
 .header {
     height: 128px;
@@ -191,5 +195,35 @@
 
     &.active {
         color: var(--accent-color);
+    }
+}
+.popular_block {
+    padding: 140px 0;
+}
+
+.popular_block .titles {
+    display: grid;
+    grid-template-areas:
+            "title title"
+            "subtitle btns";
+    grid-column-gap: 32px;
+    grid-template-columns: 1352px auto;
+}
+
+.popular_block .titles .title {
+    font-family: Playfair Display, sans-serif;
+    font-size: var(--title);
+    color: var(--text-color);
+    position: relative;
+    grid-area: title;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 365px;
+        background: var(--accent-color);
+        bottom: -20px;
+        left: 0;
     }
 }
