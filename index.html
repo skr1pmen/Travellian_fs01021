@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Travellian</title>
+    <script src="./assets/scripts/main.js" defer></script>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -79,12 +80,12 @@
                 Most popular destinations around the world, from historical places to natural wonders.
             </p>
             <div class="buttons">
-                <button class="btn"><i class="fas fa-chevron-left"></i></button>
-                <button class="btn active"><i class="fas fa-chevron-right"></i></button>
+                <button class="btn" id="left_btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="btn active" id="right_btn"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
         <div class="content">
-            <div class="slider">
+            <div class="slider" id="slider">
                 <div class="slide">
                     <img src="./assets/images/Col-block.png" alt="slide">
                     <div class="info">
