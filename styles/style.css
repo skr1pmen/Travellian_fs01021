@@ -275,5 +275,7 @@
     gap: 17px;
 }
 .popular_block .content .slider .slide .info .title {
-
+    font-family: Playfair Display, sans-serif;
+    font-size: 28px;
+    font-weight: 300;
 }
