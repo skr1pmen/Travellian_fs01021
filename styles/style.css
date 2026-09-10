@@ -449,3 +449,10 @@
         }
     }
 }
+
+.tour_block {
+    padding: 140px 0;
+    display: flex;
+    gap: 100px;
+    align-items: flex-end;
+}
