@@ -221,6 +221,7 @@
     font-size: var(--title);
     color: var(--text-color);
     position: relative;
+    font-weight: normal;
     grid-area: title;
 
     &::after {
@@ -378,7 +379,73 @@
 
 .blog_block {
     display: flex;
-    font-family: Rubik, sans-serif;
-    font-size: 24px;
-    text-align: ;
+    flex-direction: column;
+    gap: 100px;
+    padding: 140px 0;
+    .titles {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .title {
+            font-family: Playfair Display, sans-serif;
+            font-size: var(--title);
+            color: var(--text-color);
+            position: relative;
+            font-weight: normal;
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 3px;
+                width: 365px;
+                background: var(--accent-color);
+                bottom: -20px;
+                left: 0;
+            }
+        }
+        .subtitle {
+            font-family: Rubik, sans-serif;
+            font-size: var(--subtitle);
+            color: var(--secondary-color);
+            padding-top: 32px;
+        }
+    }
+    .content {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+
+        img {
+            width: 762px;
+            height: 873px;
+            border-radius: var(--card-border-radius);
+            object-fit: cover;
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+
+            h2 {
+                font-family: Playfair Display, sans-serif;
+                font-size: var(--title);
+                color: var(--text-color);
+                font-weight: normal;
+            }
+            p {
+                font-family: Rubik, sans-serif;
+                font-size: var(--subtitle);
+                font-weight: normal;
+                color: var(--text-color);
+                line-height: 52px;
+            }
+            a {
+                color: var(--accent-color);
+                text-decoration: none;
+                font-family: Rubik, sans-serif;
+                font-size: var(--subtitle);
+            }
+        }
+    }
 }
