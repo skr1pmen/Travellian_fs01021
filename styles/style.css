@@ -456,3 +456,127 @@
     gap: 100px;
     align-items: flex-end;
 }
+.tour_block .titles {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 51px;
+    width: 394px;
+}
+.tour_block .title {
+    font-family: Playfair Display, sans-serif;
+    font-size: var(--title);
+    color: var(--text-color);
+    font-weight: normal;
+    padding-bottom: 20px;
+    position: relative;
+
+    &::after {
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 231px;
+        height: 3px;
+        background: var(--accent-color);
+        position: absolute;
+    }
+}
+.tour_block .subtitle {
+    font-family: Rubik, sans-serif;
+    font-size: var(--text);
+    color: var(--secondary-color);
+    text-wrap: balance;
+}
+.tour_block .btn {
+    position: relative;
+    width: max-content;
+    margin-left: 40px;
+
+    &::before {
+        content: "";
+        width: 43px;
+        height: 43px;
+        left: 0;
+        top: 0;
+        background: var(--text-color);
+        display: block;
+        position: absolute;
+        transform: translate(-14px, -14px);
+        z-index: -1;
+    }
+
+    &::after {
+        content: "";
+        width: 43px;
+        height: 43px;
+        right: 0;
+        bottom: 0;
+        background: var(--secondary-color);
+        display: block;
+        position: absolute;
+        transform: translate(18px, 16px);
+        z-index: -1;
+    }
+}
+.tour_block .slider {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    gap: 32px;
+    margin: 73px 0;
+
+    overflow-y: hidden;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    border-radius: var(--card-border-radius);
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
+.tour_block .slide {
+    scroll-snap-align: start;
+    width: 300px;
+}
+
+.tour_block .slide img {
+    width: 100%;
+    height: 399px;
+    border-radius: var(--card-border-radius);
+    object-fit: cover;
+}
+
+.tour_block .slide .info {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 0;
+}
+.tour_block .info .header {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    font-family: Rubik, sans-serif;
+    font-size: var(--text);
+    height: max-content;
+
+    span {
+        text-transform: none;
+    }
+}
+.tour_block .info h3 {
+    font-family: Playfair Display, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.tour_block .info p {
+    display: flex;
+    justify-content: space-between;
+    font-family: Rubik, sans-serif;
+    font-size: var(--text);
+
+    .fa-star {
+        color: var(--star-color);
+    }
+}
