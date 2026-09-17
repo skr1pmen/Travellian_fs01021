@@ -522,7 +522,6 @@
     display: grid;
     grid-template-columns: repeat(4, 300px);
     gap: 32px;
-    margin: 73px 0;
 
     overflow-y: hidden;
     scrollbar-width: none;
@@ -536,6 +535,7 @@
 .tour_block .slide {
     scroll-snap-align: start;
     width: 300px;
+    cursor: pointer;
 }
 
 .tour_block .slide img {
@@ -543,11 +543,18 @@
     height: 399px;
     border-radius: var(--card-border-radius);
     object-fit: cover;
+    transition: all .3s linear;
+    transform: translateY(75px);
+    position: relative;
+    z-index: 1;
 }
 
 .tour_block .slide .info {
     color: var(--text-color);
     display: flex;
+    opacity: 0;
+    transition: all .3s linear;
+    transform: translateY(-75px);
     flex-direction: column;
     gap: 12px;
     padding: 20px 0;
@@ -578,5 +585,14 @@
 
     .fa-star {
         color: var(--star-color);
+    }
+}
+.tour_block .slide:hover {
+    .info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    img {
+        transform: translateY(0);
     }
 }
