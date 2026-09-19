@@ -657,3 +657,62 @@
     align-items: flex-end;
     gap: 40px;
 }
+.feedback {
+    padding: 140px 0 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+
+.feedback .title {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+}
+
+.feedback .titles {
+    font-family: Playfair Display, sans-serif;
+    font-size: var(--title);
+    font-weight: normal;
+    color: var(--text-color);
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 347px;
+        height: 3px;
+        background: var(--accent-color);
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+    }
+}
+.feedback .subtitle {
+    font-family: Rubik, sans-serif;
+    font-size: var(--subtitle);
+    color: var(--secondary-color);
+}
+
+.feedback .content {
+    display: grid;
+    grid-template-columns: repeat(3, 663px);
+    gap: 32px;
+
+    overflow-y: hidden;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+.feedback .content div {
+    padding: 60px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--comment-card-bg);
+    border-radius: var(--card-border-radius);
+
+}
