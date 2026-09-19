@@ -342,7 +342,7 @@
             <h2 class="titles">Traveler’s Experiences</h2>
             <p class="subtitle">Here some awesome feedback from our travelers</p>
         </div>
-        <div class="content">
+        <div class="content" id="f_slider">
             <div>
                 <img src="./assets/images/avatar_1.png" alt="avatar">
                 <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
@@ -390,11 +390,20 @@
             </div>
         </div>
         <div class="buttons">
-            <button class="btn"><i class="fas fa-chevron-left"></i></button>
-            <button class="btn active"><i class="fas fa-chevron-right"></i></button>
+            <button class="btn" onclick="left_slide()"><i class="fas fa-chevron-left"></i></button>
+            <button class="btn active" onclick="right_slide()"><i class="fas fa-chevron-right"></i></button>
         </div>
     </section>
-
+    <section class="newsletter">
+        <h2 class="title">Our Newsletter</h2>
+        <form class="form">
+            <label>
+                <p>Email</p>
+                <input type="text" placeholder="Enter your email">
+            </label>
+            <button class="btn active">Subscribe</button>
+        </form>
+    </section>
 </main>
 </body>
 </html>

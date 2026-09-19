@@ -697,6 +697,7 @@
     display: grid;
     grid-template-columns: repeat(3, 663px);
     gap: 32px;
+    margin-top: -65px;
 
     overflow-y: hidden;
     scrollbar-width: none;
@@ -713,6 +714,46 @@
     flex-direction: column;
     gap: 20px;
     background: var(--comment-card-bg);
-    border-radius: var(--card-border-radius);
+    border-radius: var(--btn-br);
+    position: relative;
+    margin-top: 65px;
+    scroll-snap-align: start;
+}
 
+.feedback .content img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    left: 40px;
+    top: -65px;
+}
+.feedback .content p {
+    font-family: Rubik, sans-serif;
+    font-size: var(--text);
+    color: var(--secondary-color);
+    line-height: 23px;
+}
+
+.feedback .content .stars {
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    gap: 4px;
+    color: var(--star-color);
+}
+.feedback .content h3 {
+    font-family: Playfair Display, sans-serif;
+    font-size: var(--subtitle);
+    color: var(--secondary-color);
+    font-weight: normal;
+}
+.feedback .content p:last-child {
+    margin-top: -16px;
+}
+.feedback .buttons {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
 }
