@@ -757,3 +757,110 @@
     gap: 40px;
     justify-content: flex-end;
 }
+
+.newsletter {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+
+    position: absolute;
+    left: 50%;
+    bottom: calc(-232px / 2);
+    width: 1262px;
+    height: 232px;
+    border-radius: var(--card-border-radius);
+    box-shadow: 0 0 4px 0 rgba(0,0,0,30%);
+    transform: translateX(-50%);
+    justify-content: center;
+}
+.newsletter .title {
+    font-family: Playfair Display, sans-serif;
+    font-size: 64px;
+    font-weight: normal;
+    color: var(--secondary-color);
+}
+.newsletter .form {
+    display: flex;
+    gap: 32px;
+    align-items: flex-end;
+    margin: 0;
+    background: none;
+
+    &::before {
+        display: none;
+    }
+}
+.newsletter .form .btn {
+    border-radius: var(--btn-br);
+    padding: 24px 35px;
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+.newsletter .form label {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.newsletter label p {
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+.newsletter label input {
+    background: #FFE8D4;
+    border-radius: var(--btn-br);
+    padding: 24px 40px;
+    color: var(--accent-color);
+    font-size: 20px;
+    border: none;
+}
+
+main {
+    position: relative;
+}
+
+.footer {
+    background: var(--text-color);
+    padding: 240px 0 140px 0;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    font-family: Rubik, sans-serif;
+}
+.footer .column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer img {
+    width: 234px;
+    object-fit: cover;
+}
+.footer .subtitle {
+    font-size: 14px;
+}
+.footer .title {
+    font-weight: 500;
+    font-size: var(--subtitle);
+}
+.footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}
+.footer .links {
+    display: flex;
+    gap: 24px;
+    font-size: 32px;
+}
+.newsletter {
+    background: var(--white);
+}
