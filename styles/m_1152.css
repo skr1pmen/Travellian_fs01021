@@ -1,0 +1,23 @@
+@media screen and (max-width: 1152px) {
+    :root {
+        --w-title: 64px;
+    }
+    .container {
+        width: 1088px;
+    }
+
+    .welcome_block .form {
+        padding: 55px 0;
+        align-items: center;
+    }
+    .welcome_block .form label {
+        width: 158px;
+    }
+    .welcome_block .form .btn {
+        padding: 40px 20px;
+        height: 179px;
+    }
+    .welcome_block {
+        background-position: 0 -510px;
+    }
+}
