@@ -20,4 +20,70 @@
     .welcome_block {
         background-position: 0 -510px;
     }
+    .popular_block .titles{
+        grid-template-columns: 854px auto;
+    }
+    .btn {
+        width: max-content;
+        height: max-content;
+    }
+    .popular_block .titles .buttons {
+        align-self: end;
+    }
+
+    .offer_block .titles{
+        grid-template-columns: auto 854px;
+    }
+    .offer_block .content .item .info {
+        padding: 24px 20px;
+    }
+    .offer_block .content .item .info .detail {
+
+    }
+    .offer_block .price {
+        font-size: 18px;
+    }
+    .offer_block .price span {
+        font-size: 28px;
+    }
+    .offer_block .content .btn {
+        font-size: 20px;
+        padding: 16px 24px;
+    }
+
+    .tour_block .slide img {
+        height: 350px;
+    }
+    .tour_block .slider {
+        grid-template-columns: repeat(4, 250px);
+    }
+    .tour_block .slide {
+        width: 250px;
+    }
+
+
+    .gallery {
+        grid-template-columns: 854px auto;
+    }
+
+    .gallery .content img {
+        width: 248px;
+        height: 351px;
+    }
+
+    .feedback .content {
+        grid-template-columns: repeat(3, 500px);
+    }
+
+    .newsletter {
+        width: 1080px;
+        gap: 60px;
+    }
+    .newsletter .title {
+        font-size: 54px;
+    }
+
+    .footer a {
+        font-size: 18px;
+    }
 }
