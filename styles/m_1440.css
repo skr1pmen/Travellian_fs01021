@@ -51,34 +51,19 @@
     }
 
 
+    .blog_block {
+        .content {
 
+            img {
+                width: 672px;
+                height: 802px;
+            }
+            .info {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                h2 {
+                    font-size: 54px;
+                }
+            }
+        }
+    }
 }

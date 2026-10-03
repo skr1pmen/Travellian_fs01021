@@ -86,4 +86,30 @@
     .footer a {
         font-size: 18px;
     }
+
+    .blog_block {
+        .content {
+
+            img {
+                width: 528px;
+                height: 666px;
+            }
+            .info {
+                display: flex;
+                flex-direction: column;
+                gap: 26px;
+
+                h2 {
+                    font-size: 54px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 42px;
+                }
+                a {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
 }
